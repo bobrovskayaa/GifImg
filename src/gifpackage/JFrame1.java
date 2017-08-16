@@ -210,10 +210,10 @@ public class JFrame1 extends javax.swing.JFrame {
 
                 jLabel2.setText("ok");
 
-                // create a gif sequence with the type of the first image, 1 second
+                // create a gif sequence with the type of the first image, 100 msecond
                 // between frames, which loops continuously
                 GifSequenceWriter writer
-                        = new GifSequenceWriter(output, firstImage.getType(), 1, false);
+                        = new GifSequenceWriter(output, firstImage.getType(), 100, true);
                 
                 // write out the first image to our sequence...
                 writer.writeToSequence(firstImage);
@@ -236,24 +236,6 @@ public class JFrame1 extends javax.swing.JFrame {
         } catch (IOException ex) {
             jLabel2.setText("Error " + ex);
         }
-
-        /*
-      
-      
-      
-      // write out the first image to our sequence...
-      writer.writeToSequence(firstImage);
-      for(int i=1; i<args.length-1; i++) {
-        BufferedImage nextImage = ImageIO.read(new File(args[i]));
-        writer.writeToSequence(nextImage);
-      
-      
-      writer.close();
-      output.close();
-    } else {
-      System.out.println(
-        "Usage: java GifSequenceWriter [list of gif files] [output file]");
-    } */
 
     }//GEN-LAST:event_jButton3ActionPerformed
 

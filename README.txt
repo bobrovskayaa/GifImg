@@ -25,4 +25,5 @@ You need default folder "ex" in folder "GifImg" with app. Please, don't change a
 5. When you select image, you can see it in this form.
 
 
-App is made in NetBeans IDE 8.1.
+//  App is made in NetBeans IDE 8.1.
+//  GifSequenceWriter.java сreated by Elliot Kroo on 2009-04-25.
